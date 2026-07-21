@@ -60,7 +60,7 @@ usa un percorso tipo `/immagini/anello.jpg`):
    Variables** e aggiungi `STRIPE_SECRET_KEY` con la tua chiave (usa
    `sk_live_...` per i pagamenti veri).
 5. Clicca "Deploy". Dopo qualche minuto il sito è online con un indirizzo
-   tipo `alba-oro.vercel.app`. Puoi collegare un dominio tuo dopo, dalle
+   tipo `monari-elisa.vercel.app`. Puoi collegare un dominio tuo dopo, dalle
    impostazioni del progetto.
 
 ## 5. Prima di vendere davvero — cose legali da sistemare

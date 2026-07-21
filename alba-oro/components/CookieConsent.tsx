@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 type Consenso = "accettato" | "rifiutato" | null;
 
-const STORAGE_KEY = "alba-oro-consenso-cookie";
+const STORAGE_KEY = "monari-elisa-consenso-cookie";
 
 export function leggiConsenso(): Consenso {
   if (typeof window === "undefined") return null;
