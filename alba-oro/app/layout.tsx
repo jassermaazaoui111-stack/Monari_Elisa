@@ -26,7 +26,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alba & Oro — Gioielli, borse e orologi",
+  title: "Monari Elisa — Gioielli, borse e orologi",
   description:
     "Una selezione curata di gioielli, borse e orologi a prezzi onesti.",
 };
