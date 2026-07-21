@@ -10,7 +10,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-bronzoChiaro/70 bg-avorio/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <Link href="/" className="font-display text-2xl tracking-wide text-inchiostro">
-          Alba<span className="text-bronzo"> & </span>Oro
+          Monari Elisa
         </Link>
         <nav className="hidden gap-8 font-sans text-sm uppercase tracking-tag text-inchiostro/80 sm:flex">
           <Link href="/prodotti/gioielli" className="hover:text-bosco transition-colors">
