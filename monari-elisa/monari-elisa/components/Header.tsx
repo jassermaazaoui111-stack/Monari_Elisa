@@ -27,9 +27,7 @@ export default function Header() {
   const { numeroArticoli } = useCart();
 
   // Mostra in navigazione solo le categorie che hanno almeno un prodotto
-  const categorieConProdotti = ORDINE.filter((cat) =>
-    prodotti.some((p) => p.categoria === cat)
-  );
+  const categorieConProdotti = ORDINE.filter((cat) => cat !== "borse");
 
   return (
     <header className="sticky top-0 z-40 border-b border-bronzoChiaro/70 bg-avorio/95 backdrop-blur">
