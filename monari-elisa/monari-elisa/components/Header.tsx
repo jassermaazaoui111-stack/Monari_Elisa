@@ -33,11 +33,9 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-bronzoChiaro/70 bg-avorio/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <Link href="/" className="flex items-center gap-2">
-          <img src="/immagini/logo-me.png" alt="Monari Elisa" className="h-9 w-auto" />
-          <span className="font-display text-2xl tracking-wide text-inchiostro">
-            Monari<span className="text-bronzo"> </span>Elisa
-          </span>
-        </Link>
+         <Link href="/" className="flex items-center">
+  <img src="/immagini/logo-me.png" alt="Monari Elisa" className="h-16 w-auto" />
+</Link>
         <nav className="hidden gap-6 font-sans text-sm uppercase tracking-tag text-inchiostro/80 lg:flex">
           {categorieConProdotti.map((cat) => (
             <Link
