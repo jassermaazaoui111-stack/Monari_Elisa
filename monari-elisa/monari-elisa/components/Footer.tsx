@@ -30,7 +30,7 @@ export default function Footer() {
         <div>
           <p className="font-display text-xl text-inchiostro">Monari Elisa</p>
           <p className="mt-3 text-sm text-inchiostro/70 leading-relaxed">
-            Gioielli e accessori scelti con cura, a prezzi onesti.
+            Gioielli, borse e orologi scelti con cura, a prezzi onesti.
           </p>
         </div>
         <div className="text-sm text-inchiostro/70">
@@ -49,10 +49,14 @@ export default function Footer() {
         </div>
         <div className="text-sm text-inchiostro/70">
           <p className="font-sans uppercase tracking-tag text-xs text-inchiostro mb-3">
-            Informazioni
+            Termini legali
           </p>
           <ul className="space-y-2">
-            <li><Link href="/informazioni-legali" className="hover:text-bosco">Termini, privacy e P.IVA</Link></li>
+            <li><Link href="/privacy" className="hover:text-bosco">Privacy policy</Link></li>
+            <li><Link href="/cookie" className="hover:text-bosco">Cookie policy</Link></li>
+            <li><Link href="/termini-uso" className="hover:text-bosco">Termini e condizioni d&apos;uso</Link></li>
+            <li><Link href="/condizioni-vendita" className="hover:text-bosco">Termini e condizioni di vendita</Link></li>
+            <li><Link href="/informazioni-legali" className="hover:text-bosco">Informazioni legali</Link></li>
           </ul>
         </div>
       </div>
