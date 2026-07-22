@@ -47,7 +47,6 @@ export default function Home() {
           { nome: "Bracciali", href: "/prodotti/bracciali" },
           { nome: "Collane", href: "/prodotti/collane" },
           { nome: "Set", href: "/prodotti/set" },
-          { nome: "Borse", href: "/prodotti/borse" },
         ].map((c) => (
           <Link
             key={c.href}
