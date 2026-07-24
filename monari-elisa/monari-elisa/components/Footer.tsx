@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { prodotti, Product } from "@/lib/products";
+import { Product } from "@/lib/products";
 
 const NOMI: Record<Product["categoria"], string> = {
   anelli: "Anelli",
@@ -20,19 +20,11 @@ const ORDINE: Product["categoria"][] = [
 ];
 
 export default function Footer() {
-  const categorieConProdotti = ORDINE.filter((cat) =>
-    prodotti.some((p) => p.categoria === cat)
-  );
+  const categorieConProdotti = ORDINE.filter((cat) => cat !== "borse");
 
   return (
     <footer className="mt-24 border-t border-bronzoChiaro/70 bg-avorioScuro">
-      <div className="mx-auto max-w-6xl px-6 py-12 grid gap-10 sm:grid-cols-3">
-        <div>
-          <p className="font-display text-xl text-inchiostro">Monari Elisa</p>
-          <p className="mt-3 text-sm text-inchiostro/70 leading-relaxed">
-            Gioielli, borse e orologi scelti con cura, a prezzi onesti.
-          </p>
-        </div>
+      <div className="mx-auto max-w-6xl px-6 py-12 grid gap-10 sm:grid-cols-2">
         <div className="text-sm text-inchiostro/70">
           <p className="font-sans uppercase tracking-tag text-xs text-inchiostro mb-3">
             Negozio
@@ -47,6 +39,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
+
         <div className="text-sm text-inchiostro/70">
           <p className="font-sans uppercase tracking-tag text-xs text-inchiostro mb-3">
             Termini legali
@@ -60,6 +53,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+
       <div className="border-t border-bronzoChiaro/70 py-5 text-center font-mono text-xs text-inchiostro/50">
         © {new Date().getFullYear()} Monari Elisa
       </div>
