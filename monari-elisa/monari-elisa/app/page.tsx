@@ -9,13 +9,10 @@ export default function Home() {
     <>
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
         
-        <h1 className="mt-4 max-w-2xl font-display text-5xl italic leading-[1.1] text-inchiostro sm:text-6xl">
-          Piccoli oggetti, scelti con cura.
-        </h1>
-        <p className="mt-6 max-w-md text-inchiostro/75 leading-relaxed">
+       <h1 className="font-display text-5xl sm:text-6xl italic text-inchiostro leading-tight">
           Piccoli gioielli da indossare tutti i giorni, scelti con cura uno a uno.
-        </p>
-        <Link
+        </h1>
+       
           href="/prodotti/orecchini"
           className="mt-8 inline-block rounded-full bg-bosco px-7 py-3 text-sm text-avorio hover:bg-boscoScuro transition-colors"
         >
