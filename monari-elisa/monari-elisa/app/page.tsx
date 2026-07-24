@@ -12,10 +12,8 @@ export default function Home() {
         <h1 className="mt-4 max-w-2xl font-display text-5xl italic leading-[1.1] text-inchiostro sm:text-6xl">
           Piccoli oggetti, scelti con cura.
         </h1>
-        <p className="mt-6 max-w-md text-inchiostro/70 leading-relaxed">
-          Gioielli e accessori selezionati uno a uno, a prezzi onesti.
-          Ogni pezzo arriva con la sua etichetta — nessuna sorpresa,
-          nessun fronzolo.
+        <p className="mt-6 max-w-md text-inchiostro/75 leading-relaxed">
+          Piccoli gioielli da indossare tutti i giorni, scelti con cura uno a uno.
         </p>
         <Link
           href="/prodotti/orecchini"
