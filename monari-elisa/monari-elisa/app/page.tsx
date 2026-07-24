@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
-        <h1 className="font-display text-5xl sm:text-6xl italic text-inchiostro leading-tight">
+        <h1 className="font-display text-3xl sm:text-4xl italic text-inchiostro leading-tight text-left max-w-2xl">
           Piccoli gioielli da indossare tutti i giorni, scelti con cura uno a uno.
         </h1>
 
