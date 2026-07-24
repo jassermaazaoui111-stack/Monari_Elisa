@@ -4,15 +4,14 @@ import { prodotti } from "@/lib/products";
 
 export default function Home() {
   const inEvidenza = prodotti.filter((p) => p.inEvidenza);
-
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
-        
-       <h1 className="font-display text-5xl sm:text-6xl italic text-inchiostro leading-tight">
+        <h1 className="font-display text-5xl sm:text-6xl italic text-inchiostro leading-tight">
           Piccoli gioielli da indossare tutti i giorni, scelti con cura uno a uno.
         </h1>
-       
+
+        <Link
           href="/prodotti/orecchini"
           className="mt-8 inline-block rounded-full bg-bosco px-7 py-3 text-sm text-avorio hover:bg-boscoScuro transition-colors"
         >
