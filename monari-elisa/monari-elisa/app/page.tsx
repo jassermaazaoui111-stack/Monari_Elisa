@@ -7,16 +7,28 @@ export default function Home() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
-        <h1 className="font-display text-3xl sm:text-4xl italic text-inchiostro leading-tight text-left max-w-2xl">
-          Piccoli gioielli da indossare tutti i giorni, scelti con cura uno a uno.
-        </h1>
+        <div className="grid items-center gap-10 sm:grid-cols-2">
+          <div>
+            <h1 className="font-display text-3xl sm:text-4xl italic text-inchiostro leading-tight text-left max-w-2xl">
+              Piccoli gioielli da indossare tutti i giorni, scelti con cura uno a uno.
+            </h1>
 
-        <Link
-          href="/prodotti/orecchini"
-          className="mt-8 inline-block rounded-full bg-bosco px-7 py-3 text-sm text-avorio hover:bg-boscoScuro transition-colors"
-        >
-          Scopri la collezione
-        </Link>
+            <Link
+              href="/prodotti/orecchini"
+              className="mt-8 inline-block rounded-full bg-bosco px-7 py-3 text-sm text-avorio hover:bg-boscoScuro transition-colors"
+            >
+              Scopri la collezione
+            </Link>
+          </div>
+
+          <div className="flex justify-center sm:justify-end">
+            <img
+              src="/immagini/hero-orecchini.jpg"
+              alt="Orecchini a cerchio con pendente tulipano"
+              className="w-full max-w-sm rounded-md"
+            />
+          </div>
+        </div>
       </section>
 
       {inEvidenza.length > 0 && (
