@@ -44,3 +44,23 @@ export default function Header() {
               href={`/prodotti/${cat}`}
               className="hover:text-bosco transition-colors"
             >
+              {NOMI[cat]}
+            </Link>
+          ))}
+        </nav>
+
+        <Link
+          href="/carrello"
+          className="relative font-sans text-sm uppercase tracking-tag text-inchiostro/80 hover:text-bosco transition-colors"
+        >
+          Carrello
+          {numeroArticoli > 0 && (
+            <span className="ml-2 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-bosco px-1 font-mono text-xs text-avorio">
+              {numeroArticoli}
+            </span>
+          )}
+        </Link>
+      </div>
+    </header>
+  );
+}
