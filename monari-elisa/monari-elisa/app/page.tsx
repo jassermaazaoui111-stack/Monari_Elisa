@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
-        <p className="font-mono text-xs uppercase tracking-tag text-bronzo">
-          Nuova selezione
-        </p>
+        
         <h1 className="mt-4 max-w-2xl font-display text-5xl italic leading-[1.1] text-inchiostro sm:text-6xl">
           Piccoli oggetti, scelti con cura.
         </h1>
