@@ -9,17 +9,29 @@ export default function DettaglioProdotto({ prodotto }: { prodotto: Product }) {
   const { aggiungi } = useCart();
   const [varianteIndex, setVarianteIndex] = useState(0);
   const [aggiunto, setAggiunto] = useState(false);
+  const [conRegalo, setConRegalo] = useState(false);
 
   const variante = prodotto.varianti?.[varianteIndex];
   const immagineAttuale = variante?.immagine ?? prodotto.immagine;
 
+  const regaloDisponibile = prodotto.categoria === "orecchini";
+
   function handleClick() {
-    // Se ci sono varianti, il nome nel carrello include il colore scelto
-    // e ogni colore diventa una riga separata nel carrello
     const prodottoDaAggiungere = variante
       ? { ...prodotto, nome: `${prodotto.nome} — ${variante.nome}`, immagine: immagineAttuale }
       : prodotto;
     aggiungi(prodottoDaAggiungere, 1, variante?.nome);
+
+    if (regaloDisponibile && conRegalo) {
+      const pacchetto = {
+        slug: "pacchetto-regalo",
+        nome: "Pacchetto regalo",
+        prezzo: 1,
+        immagine: prodotto.immagine,
+      } as unknown as Product;
+      aggiungi(pacchetto, 1, "regalo");
+    }
+
     setAggiunto(true);
     setTimeout(() => setAggiunto(false), 1800);
   }
@@ -86,6 +98,18 @@ export default function DettaglioProdotto({ prodotto }: { prodotto: Product }) {
               ))}
             </div>
           </div>
+        )}
+
+        {regaloDisponibile && (
+          <label className="mt-8 flex items-center gap-3 cursor-pointer text-sm text-inchiostro/80">
+            <input
+              type="checkbox"
+              checked={conRegalo}
+              onChange={(e) => setConRegalo(e.target.checked)}
+              className="h-4 w-4 accent-bosco"
+            />
+            Aggiungi pacchetto regalo (+1 €)
+          </label>
         )}
 
         <div className="mt-10">
