@@ -1,127 +1,87 @@
-"use client";
+import { NextResponse } from "next/server";
+import Stripe from "stripe";
+import { getProdotto } from "@/lib/products";
 
-import { useState } from "react";
-import Image from "next/image";
-import { useCart } from "@/lib/cart-context";
-import { Product } from "@/lib/products";
-
-export default function DettaglioProdotto({ prodotto }: { prodotto: Product }) {
-  const { aggiungi } = useCart();
-  const [varianteIndex, setVarianteIndex] = useState(0);
-  const [aggiunto, setAggiunto] = useState(false);
-  const [conRegalo, setConRegalo] = useState(false);
-
-  const variante = prodotto.varianti?.[varianteIndex];
-  const immagineAttuale = variante?.immagine ?? prodotto.immagine;
-
-  // Il pacchetto regalo è disponibile solo per gli orecchini
-  const regaloDisponibile = prodotto.categoria === "orecchini";
-
-  function handleClick() {
-    const prodottoDaAggiungere = variante
-      ? { ...prodotto, nome: `${prodotto.nome} — ${variante.nome}`, immagine: immagineAttuale }
-      : prodotto;
-    aggiungi(prodottoDaAggiungere, 1, variante?.nome);
-
-    if (regaloDisponibile && conRegalo) {
-      const pacchetto = {
-        slug: "pacchetto-regalo",
-        nome: "Pacchetto regalo",
-        prezzo: 1,
-        immagine: prodotto.immagine,
-      } as unknown as Product;
-      aggiungi(pacchetto, 1, "regalo");
-    }
-
-    setAggiunto(true);
-    setTimeout(() => setAggiunto(false), 1800);
+export async function POST(request: Request) {
+  if (!process.env.STRIPE_SECRET_KEY) {
+    return NextResponse.json(
+      { errore: "Pagamenti non ancora configurati (manca STRIPE_SECRET_KEY)." },
+      { status: 500 }
+    );
   }
 
-  return (
-    <>
-      <div className="aspect-[4/5] overflow-hidden rounded-md bg-avorioScuro">
-        <Image
-          src={immagineAttuale}
-          alt={prodotto.nome}
-          width={800}
-          height={1000}
-          className="h-full w-full object-cover"
-          priority
-        />
-      </div>
-      <div className="flex flex-col">
-        <h1 className="font-display text-4xl italic text-inchiostro">
-          {prodotto.nome}
-        </h1>
-        {prodotto.materiale && (
-          <p className="mt-2 text-xs uppercase tracking-tag text-inchiostro/50">
-            {prodotto.materiale}
-          </p>
-        )}
-        {prodotto.misure && (
-          <p className="mt-1 text-xs uppercase tracking-tag text-inchiostro/50">
-            {prodotto.misure}
-          </p>
-        )}
-        <p className="mt-6 font-mono text-2xl text-bosco">
-          € {prodotto.prezzo}
-        </p>
-        <p className="mt-6 text-inchiostro/75 leading-relaxed max-w-md">
-          {prodotto.descrizione}
-        </p>
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-        {prodotto.varianti && prodotto.varianti.length > 0 && (
-          <div className="mt-8">
-            <p className="text-xs uppercase tracking-tag text-inchiostro/50 mb-3">
-              Colore: {variante?.nome}
-            </p>
-            <div className="flex gap-3">
-              {prodotto.varianti.map((v, i) => (
-                <button
-                  key={v.nome}
-                  onClick={() => setVarianteIndex(i)}
-                  className={`h-14 w-14 overflow-hidden rounded-full border-2 transition-colors ${
-                    i === varianteIndex
-                      ? "border-bosco"
-                      : "border-transparent hover:border-bronzoChiaro"
-                  }`}
-                  aria-label={v.nome}
-                  aria-pressed={i === varianteIndex}
-                >
-                  <Image
-                    src={v.immagine}
-                    alt={v.nome}
-                    width={56}
-                    height={56}
-                    className="h-full w-full object-cover"
-                  />
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
+  try {
+    const { articoli } = await request.json();
 
-        {regaloDisponibile && (
-          <label className="mt-8 flex items-center gap-3 cursor-pointer text-sm text-inchiostro/80">
-            <input
-              type="checkbox"
-              checked={conRegalo}
-              onChange={(e) => setConRegalo(e.target.checked)}
-              className="h-4 w-4 accent-bosco"
-            />
-            Aggiungi pacchetto regalo (+1 €)
-          </label>
-        )}
+    if (!Array.isArray(articoli) || articoli.length === 0) {
+      return NextResponse.json({ errore: "Carrello vuoto." }, { status: 400 });
+    }
 
-        <div className="mt-10">
-          <button
-            onClick={handleClick}
-            className="rounded-full bg-bosco px-8 py-3 text-sm text-avorio hover:bg-boscoScuro transition-colors"
-          >
-            {aggiunto ? "Aggiunto al carrello ✓" : "Aggiungi al carrello"}
-          </button>
-        </div>
-      </div>
-    </>
-  );
+    const lineItems: Stripe.Checkout.SessionCreateParams.LineItem[] = [];
+    for (const articolo of articoli) {
+      if (articolo.slug === "pacchetto-regalo") {
+        const quantitaRegalo = Math.max(1, Math.min(20, Number(articolo.quantita) || 1));
+        lineItems.push({
+          quantity: quantitaRegalo,
+          price_data: {
+            currency: "eur",
+            unit_amount: 100,
+            product_data: { name: "Pacchetto regalo" },
+          },
+        });
+        continue;
+      }
+
+      const prodotto = getProdotto(articolo.slug);
+      if (!prodotto) continue;
+      const quantita = Math.max(1, Math.min(20, Number(articolo.quantita) || 1));
+      lineItems.push({
+        quantity: quantita,
+        price_data: {
+          currency: "eur",
+          unit_amount: Math.round(prodotto.prezzo * 100),
+          product_data: {
+            name: prodotto.nome,
+            images: [prodotto.immagine],
+          },
+        },
+      });
+    }
+
+    if (lineItems.length === 0) {
+      return NextResponse.json(
+        { errore: "Nessun prodotto valido nel carrello." },
+        { status: 400 }
+      );
+    }
+
+    const origin = request.headers.get("origin") || process.env.SITE_URL || "";
+
+    const session = await stripe.checkout.sessions.create({
+      mode: "payment",
+      line_items: lineItems,
+      shipping_address_collection: { allowed_countries: ["IT", "SM", "VA"] },
+      shipping_options: [
+        {
+          shipping_rate_data: {
+            type: "fixed_amount",
+            fixed_amount: { amount: 690, currency: "eur" },
+            display_name: "Spedizione standard (2-4 giorni)",
+          },
+        },
+      ],
+      success_url: `${origin}/checkout/successo?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}/checkout/annullato`,
+    });
+
+    return NextResponse.json({ url: session.url });
+  } catch (err) {
+    console.error("Errore creazione sessione Stripe:", err);
+    return NextResponse.json(
+      { errore: "Errore durante la creazione del pagamento." },
+      { status: 500 }
+    );
+  }
 }
