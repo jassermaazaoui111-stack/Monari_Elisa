@@ -17,23 +17,23 @@ export type Product = {
 };
 
 export const prodotti: Product[] = [
-  {
+{
     slug: "orecchini-triplo-cuore",
     nome: "Orecchini Triplo Cuore con Zirconi",
     categoria: "orecchini",
     prezzo: 12.8,
     descrizione:
       "Orecchini pendenti con tre cuori scintillanti in gradazione, ogni cuore incorniciato da un'aureola di brillanti zirconi bianchi. Superficie lucida e piacevole al tatto, resistente alla ruggine e allo scolorimento. Perfetti come regalo simbolico d'amore. Disponibili in argento e oro, in più colori.",
-    immagine: "/immagini/YC24100B962XARG_BIANCO-1000x1000.jpg",
+    immagine: "/immagini/triplo-cuore-argento-bianco.jpg",
     materiale: "Acciaio inox 316L, zircone",
     misure: "Lunghezza 2,8 cm, larghezza 0,7 cm",
     inEvidenza: true,
     varianti: [
-      { nome: "Argento bianco", immagine: "/immagini/YC24100B962XARG_BIANCO-1000x1000.jpg" },
-      { nome: "Argento verde", immagine: "/immagini/YC24100B962XARG_verde-1600x1600.jpg" },
-      { nome: "Oro verde", immagine: "/immagini/YC24100B962XORO_verde-1600x1600.jpg" },
-      { nome: "Oro rosa", immagine: "/immagini/YC24100B962XORO_ROSA-1600x1600.jpg" },
-      { nome: "Oro rosso", immagine: "/immagini/YC24100B962XORO_ROSSO-1000x1000.jpg" },
+      { nome: "Argento bianco", immagine: "/immagini/triplo-cuore-argento-bianco.jpg" },
+      { nome: "Argento verde", immagine: "/immagini/triplo-cuore-argento-verde.jpg" },
+      { nome: "Oro verde", immagine: "/immagini/triplo-cuore-oro-verde.jpg" },
+      { nome: "Oro rosa", immagine: "/immagini/triplo-cuore-oro-rosa.jpg" },
+      { nome: "Oro rosso", immagine: "/immagini/triplo-cuore-oro-rosso.jpg" },
     ],
   },
   {
