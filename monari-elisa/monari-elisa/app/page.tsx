@@ -17,3 +17,32 @@ export default function Home() {
               href="/prodotti/orecchini"
               className="mt-8 inline-block rounded-full bg-bosco px-7 py-3 text-sm text-avorio hover:bg-boscoScuro transition-colors"
             >
+              Scopri la collezione
+            </Link>
+          </div>
+
+          <div className="flex justify-center sm:justify-end">
+            <img
+              src="/immagini/hero-orecchini.jpg"
+              alt="Orecchini a cerchio con pendente tulipano"
+              className="w-full max-w-sm rounded-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      {inEvidenza.length > 0 && (
+        <section className="mx-auto max-w-6xl px-6 pb-24">
+          <h2 className="font-display text-2xl italic text-inchiostro mb-8">
+            In evidenza
+          </h2>
+          <div className="grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3">
+            {inEvidenza.map((p) => (
+              <ProductCard key={p.slug} prodotto={p} />
+            ))}
+          </div>
+        </section>
+      )}
+    </>
+  );
+}
