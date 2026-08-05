@@ -61,7 +61,7 @@ export default function CondizioniVenditaPage() {
           </h2>
           <p>
             Spediamo in Italia, San Marino e Città del Vaticano tramite Poste
-            Italiane. Il costo di spedizione è di 6,90 €. Gli ordini vengono
+            Italiane. Il costo di spedizione è di 6,50 €. Gli ordini vengono
             preparati entro 1-2 giorni lavorativi e consegnati entro un massimo
             di 3 giorni dalla spedizione. I tempi possono variare nei periodi di
             maggiore traffico.
@@ -82,8 +82,9 @@ export default function CondizioniVenditaPage() {
           </p>
           <p className="mb-2">
             Il prodotto deve essere restituito integro, non utilizzato, completo
-            di cartellini ed etichette e nella confezione originale. Le spese di
-            restituzione sono a carico [DEL CLIENTE / NOSTRO].
+            di cartellini ed etichette e nella confezione originale. In caso di
+            recesso per ripensamento, le spese di restituzione sono a carico del
+            cliente.
           </p>
           <p>
             Il rimborso viene effettuato entro 14 giorni dal ricevimento del
@@ -112,7 +113,9 @@ export default function CondizioniVenditaPage() {
             24 mesi prevista dal Codice del Consumo. In caso di difetto hai
             diritto alla riparazione, alla sostituzione o, se non possibili,
             alla riduzione del prezzo o alla risoluzione del contratto. Segnala
-            il difetto a elisamonari@icloud.com allegando una fotografia.
+            il difetto a elisamonari@icloud.com allegando una fotografia. Se il
+            prodotto risulta difettoso, le spese di spedizione del reso sono
+            interamente a nostro carico.
           </p>
         </div>
 
