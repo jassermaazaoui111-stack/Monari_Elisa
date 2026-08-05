@@ -48,7 +48,7 @@ export const prodotti: Product[] = [
     slug: "orecchino-clip-strass",
     nome: "Orecchino Clip con Strass",
     categoria: "orecchini",
-    prezzo: 3,60,
+    prezzo: 3.60,
     descrizione:
       "Orecchino a clip, non richiede il foro nel lobo. Chiusura regolabile e strass sfaccettato. Venduto singolarmente.",
     immagine: "/immagini/orecchino-clip-strass-singolo.jpeg",
@@ -58,7 +58,7 @@ export const prodotti: Product[] = [
     slug: "orecchino-cuore",
     nome: "Orecchino a Cuore",
     categoria: "orecchini",
-    prezzo: 5,40,
+    prezzo: 5.40,
     descrizione:
       "Piccolo orecchino a forma di cuore con zircone centrale, chiusura a farfalla. Venduto singolarmente. Disponibile in oro e argento.",
     immagine: "/immagini/orecchino-cuore-oro.jpeg",
@@ -72,7 +72,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-tulipano",
     nome: "Orecchini a Cerchio Tulipano",
     categoria: "orecchini",
-    prezzo: 5,4,
+    prezzo: 5.4,
     descrizione:
       "Orecchini a cerchio in argento con ciondolo a forma di tulipano smaltato. Disponibili in giallo e rosa.",
     immagine: "/immagini/orecchini-tulipano-rosa.jpeg",
@@ -86,7 +86,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-croce",
     nome: "Orecchini a Cerchio con Croce",
     categoria: "orecchini",
-    prezzo: 7,2,
+    prezzo: 7.2,
     descrizione:
       "Orecchini a cerchio con piccola croce incastonata di zirconi. Disponibili in oro e argento.",
     immagine: "/immagini/orecchini-croce-oro.jpeg",
@@ -101,7 +101,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-cuore-piccolo",
     nome: "Orecchini a Cerchio con Cuore",
     categoria: "orecchini",
-    prezzo: 7,20,
+    prezzo: 7.20,
     descrizione:
       "Orecchini a cerchio con piccolo cuore incastonato di strass. Disponibili in argento e oro.",
     immagine: "/immagini/orecchini-cuore-piccolo-argento.jpg",
@@ -116,7 +116,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-cuore-pendente",
     nome: "Orecchini a Cerchio con Cuore Pendente",
     categoria: "orecchini",
-    prezzo: 7,20,
+    prezzo: 7.20,
     descrizione:
       "Orecchini a cerchio con piccolo cuore pendente incastonato di strass. Disponibili in argento e oro.",
     immagine: "/immagini/orecchini-cuore-pendente-argento.jpg",
@@ -131,7 +131,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-disco-scolpito",
     nome: "Orecchini Disco Scolpito",
     categoria: "orecchini",
-    prezzo: 7,90,
+    prezzo: 7.90,
     descrizione:
       "Orecchini a bottone dalla forma organica e scolpita, superficie liscia e lucida.",
     immagine: "/immagini/orecchini-disco-oro.jpg",
@@ -142,7 +142,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-rosa-nera-perla",
     nome: "Orecchini Rosa con Perla",
     categoria: "orecchini",
-    prezzo: 7,20,
+    prezzo: 7.20,
     descrizione:
       "Orecchini a bottone a forma di rosa smaltata nera, con perla artificiale al centro.",
     immagine: "/immagini/orecchini-rosa-nera-perla.jpg",
@@ -179,7 +179,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-swirl",
     nome: "Orecchini a Conchiglia Swirl",
     categoria: "orecchini",
-    prezzo: 8,4,
+    prezzo: 8.4,
     descrizione:
       "Orecchini a bottone con motivo a righe scolpite che avvolgono la forma a conchiglia. Disponibili in argento e oro.",
     immagine: "/immagini/orecchini-swirl-argento.jpg",
@@ -193,7 +193,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-lacrima",
     nome: "Orecchini a Lacrima",
     categoria: "orecchini",
-    prezzo: 8,4,
+    prezzo: 8.4,
     descrizione:
       "Orecchini a bottone dalla forma a goccia, lucidi e scultorei. Disponibili in oro e argento.",
     immagine: "/immagini/orecchini-lacrima-oro.jpg",
