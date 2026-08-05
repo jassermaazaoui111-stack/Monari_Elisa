@@ -23,7 +23,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-cerchio-zirconi",
     nome: "Orecchini a Cerchio con Zirconi",
     categoria: "orecchini",
-    prezzo: 12,
+    prezzo: 9,
     descrizione:
       "Orecchini a cerchio con fila di zirconi taglio smeraldo, chiusura a scatto. Disponibili in due finiture, argento e oro.",
     immagine: "/immagini/orecchini-cerchio-diamanti.jpeg",
@@ -48,7 +48,7 @@ export const prodotti: Product[] = [
     slug: "orecchino-clip-strass",
     nome: "Orecchino Clip con Strass",
     categoria: "orecchini",
-    prezzo: 4,
+    prezzo: 3,60,
     descrizione:
       "Orecchino a clip, non richiede il foro nel lobo. Chiusura regolabile e strass sfaccettato. Venduto singolarmente.",
     immagine: "/immagini/orecchino-clip-strass-singolo.jpeg",
@@ -58,7 +58,7 @@ export const prodotti: Product[] = [
     slug: "orecchino-cuore",
     nome: "Orecchino a Cuore",
     categoria: "orecchini",
-    prezzo: 4,
+    prezzo: 5,40,
     descrizione:
       "Piccolo orecchino a forma di cuore con zircone centrale, chiusura a farfalla. Venduto singolarmente. Disponibile in oro e argento.",
     immagine: "/immagini/orecchino-cuore-oro.jpeg",
@@ -72,7 +72,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-tulipano",
     nome: "Orecchini a Cerchio Tulipano",
     categoria: "orecchini",
-    prezzo: 12,
+    prezzo: 5,4,
     descrizione:
       "Orecchini a cerchio in argento con ciondolo a forma di tulipano smaltato. Disponibili in giallo e rosa.",
     immagine: "/immagini/orecchini-tulipano-rosa.jpeg",
@@ -86,7 +86,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-croce",
     nome: "Orecchini a Cerchio con Croce",
     categoria: "orecchini",
-    prezzo: 10,
+    prezzo: 7,2,
     descrizione:
       "Orecchini a cerchio con piccola croce incastonata di zirconi. Disponibili in oro e argento.",
     immagine: "/immagini/orecchini-croce-oro.jpeg",
@@ -101,7 +101,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-cuore-piccolo",
     nome: "Orecchini a Cerchio con Cuore",
     categoria: "orecchini",
-    prezzo: 10,
+    prezzo: 7,20,
     descrizione:
       "Orecchini a cerchio con piccolo cuore incastonato di strass. Disponibili in argento e oro.",
     immagine: "/immagini/orecchini-cuore-piccolo-argento.jpg",
@@ -116,7 +116,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-cuore-pendente",
     nome: "Orecchini a Cerchio con Cuore Pendente",
     categoria: "orecchini",
-    prezzo: 10,
+    prezzo: 7,20,
     descrizione:
       "Orecchini a cerchio con piccolo cuore pendente incastonato di strass. Disponibili in argento e oro.",
     immagine: "/immagini/orecchini-cuore-pendente-argento.jpg",
@@ -131,7 +131,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-disco-scolpito",
     nome: "Orecchini Disco Scolpito",
     categoria: "orecchini",
-    prezzo: 12,
+    prezzo: 7,90,
     descrizione:
       "Orecchini a bottone dalla forma organica e scolpita, superficie liscia e lucida.",
     immagine: "/immagini/orecchini-disco-oro.jpg",
@@ -142,7 +142,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-rosa-nera-perla",
     nome: "Orecchini Rosa con Perla",
     categoria: "orecchini",
-    prezzo: 8,
+    prezzo: 7,20,
     descrizione:
       "Orecchini a bottone a forma di rosa smaltata nera, con perla artificiale al centro.",
     immagine: "/immagini/orecchini-rosa-nera-perla.jpg",
@@ -153,7 +153,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-halo-cuore",
     nome: "Orecchini a Cuore Halo",
     categoria: "orecchini",
-    prezzo: 12,
+    prezzo: 8,
     descrizione:
       "Orecchini a bottone a forma di cuore, con zircone centrale circondato da un'aureola di pietre più piccole. Disponibili in argento e oro.",
     immagine: "/immagini/orecchini-halo-cuore-argento.jpg",
@@ -168,7 +168,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-catena-cristalli",
     nome: "Orecchini a Catena di Cristalli",
     categoria: "orecchini",
-    prezzo: 12,
+    prezzo: 8,
     descrizione:
       "Orecchini pendenti lunghi, con una fila continua di cristalli incastonati. Un tocco luminoso e slanciato.",
     immagine: "/immagini/orecchini-catena-cristalli.png",
@@ -179,7 +179,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-swirl",
     nome: "Orecchini a Conchiglia Swirl",
     categoria: "orecchini",
-    prezzo: 12,
+    prezzo: 8,4,
     descrizione:
       "Orecchini a bottone con motivo a righe scolpite che avvolgono la forma a conchiglia. Disponibili in argento e oro.",
     immagine: "/immagini/orecchini-swirl-argento.jpg",
@@ -193,7 +193,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-lacrima",
     nome: "Orecchini a Lacrima",
     categoria: "orecchini",
-    prezzo: 10,
+    prezzo: 8,4,
     descrizione:
       "Orecchini a bottone dalla forma a goccia, lucidi e scultorei. Disponibili in oro e argento.",
     immagine: "/immagini/orecchini-lacrima-oro.jpg",
@@ -208,7 +208,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-pave",
     nome: "Orecchini a Cerchio Pavé",
     categoria: "orecchini",
-    prezzo: 12,
+    prezzo: 9,
     descrizione:
       "Orecchini a cerchio interamente ricoperti di zirconi a incastro pavé, per un effetto luminoso a tutto tondo. Disponibili in argento e oro.",
     immagine: "/immagini/orecchini-pave-argento.jpg",
@@ -223,7 +223,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-catena-pendenti",
     nome: "Orecchini a Catena con Pietre Pendenti",
     categoria: "orecchini",
-    prezzo: 15,
+    prezzo: 10,
     descrizione:
       "Orecchini pendenti con tre pietre a goccia in gradazione di colore, collegate a una sottile catena che si aggancia dietro il lobo. Disponibili in rosa e verde.",
     immagine: "/immagini/orecchini-catena-pendenti-rosa.jpg",
@@ -249,7 +249,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-bamboo-colorati",
     nome: "Orecchini a Cerchio Bamboo Colorati",
     categoria: "orecchini",
-    prezzo: 13,
+    prezzo: 10,
     descrizione:
       "Orecchini a cerchio dorati con inserto smaltato colorato, ispirati allo stile bamboo. Disponibili in arancione, verde e viola.",
     immagine: "/immagini/orecchini-bamboo-arancione.jpg",
@@ -276,7 +276,7 @@ export const prodotti: Product[] = [
     slug: "cerchietti-zirconi-set-6",
     nome: "Set 6 Cerchietti con Zirconi",
     categoria: "orecchini",
-    prezzo: 15,
+    prezzo: 2,
     descrizione:
       "Set da 6 cerchietti in argento con fila di zirconi, per riempire più piercing o per condividere con le amiche.",
     immagine: "/immagini/cerchietti-zirconi-set.jpg",
@@ -319,7 +319,7 @@ export const prodotti: Product[] = [
     slug: "orecchini-farfalla-asimmetrici",
     nome: "Orecchini Asimmetrici Farfalla",
     categoria: "orecchini",
-    prezzo: 14,
+    prezzo: 12,
     descrizione:
       "Set di orecchini asimmetrici: uno a filo con farfalla di zirconi e catenina a scendere, l'altro pensato per doppio foro con ciondolo a goccia e marquise. Disponibili in argento e oro.",
     immagine: "/immagini/orecchini-farfalla-asimmetrici-argento.jpg",
