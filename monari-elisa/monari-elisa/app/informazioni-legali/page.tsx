@@ -1,6 +1,10 @@
+export const metadata = {
+  title: "Informazioni legali — Monari Elisa",
+};
+
 export default function InformazioniLegaliPage() {
   return (
-    <section className="mx-auto max-w-2xl px-6 py-16 prose-none">
+    <section className="mx-auto max-w-2xl px-6 py-16">
       <h1 className="font-display text-3xl italic text-inchiostro mb-8">
         Informazioni legali
       </h1>
@@ -8,37 +12,60 @@ export default function InformazioniLegaliPage() {
       <div className="space-y-8 text-sm text-inchiostro/75 leading-relaxed">
         <div>
           <h2 className="font-display text-lg not-italic text-inchiostro mb-2">
-            Titolare
+            Titolare dell&apos;attività
           </h2>
           <p>
-            [Ragione sociale] — P.IVA [xxxxxxxxxxx] — Sede legale: [indirizzo] —
-            Email: [email] — PEC: [pec, se presente]
+            Elisa Monari
+            <br />
+            Partita IVA 02944010996
+            <br />
+            Via Raffaele Ricca 22 — 16139 Genova (GE), Italia
+            <br />
+            PEC: iamelisamonari@pec.it
+            <br />
+            Email: elisamonari@icloud.com
           </p>
         </div>
+
         <div>
           <h2 className="font-display text-lg not-italic text-inchiostro mb-2">
-            Diritto di recesso
+            Documenti
+          </h2>
+          <ul className="space-y-1">
+            <li>
+              <a href="/privacy" className="underline hover:text-bosco">
+                Privacy policy
+              </a>
+            </li>
+            <li>
+              <a href="/cookie" className="underline hover:text-bosco">
+                Cookie policy
+              </a>
+            </li>
+            <li>
+              <a href="/termini-uso" className="underline hover:text-bosco">
+                Termini e condizioni d&apos;uso
+              </a>
+            </li>
+            <li>
+              
+                href="/condizioni-vendita"
+                className="underline hover:text-bosco"
+              >
+                Termini e condizioni di vendita
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="font-display text-lg not-italic text-inchiostro mb-2">
+            Assistenza
           </h2>
           <p>
-            Ai sensi del Codice del Consumo, hai 14 giorni dalla ricezione del
-            prodotto per recedere dall'acquisto senza fornire motivazioni.
-            [Dettaglia qui la procedura di reso.]
-          </p>
-        </div>
-        <div>
-          <h2 className="font-display text-lg not-italic text-inchiostro mb-2">
-            Spedizioni e resi
-          </h2>
-          <p>[Tempi di spedizione, corrieri usati, costi e modalità di reso.]</p>
-        </div>
-        <div>
-          <h2 className="font-display text-lg not-italic text-inchiostro mb-2">
-            Privacy e cookie
-          </h2>
-          <p>
-            [Testo informativa privacy completa — consigliato farla
-            revisionare da un consulente/commercialista prima della
-            pubblicazione, insieme al trattamento fiscale delle vendite.]
+            Per informazioni su ordini, spedizioni o resi scrivi a
+            elisamonari@icloud.com. Rispondiamo di norma entro due giorni
+            lavorativi.
           </p>
         </div>
       </div>
