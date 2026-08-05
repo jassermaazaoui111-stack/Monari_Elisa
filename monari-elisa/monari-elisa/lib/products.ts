@@ -34,7 +34,25 @@ export const prodotti: Product[] = [
       { nome: "Oro verde", immagine: "/immagini/triplo-cuore-oro-verde.jpg" },
       { nome: "Oro rosa", immagine: "/immagini/triplo-cuore-oro-rosa.jpg" },
       { nome: "Oro rosso", immagine: "/immagini/triplo-cuore-oro-rosso.jpg" },
+    ],{
+    slug: "cerchietto-singolo-zircone-colorato",
+    nome: "Cerchietto Singolo con Zircone Rettangolare",
+    categoria: "orecchini",
+    prezzo: 2.5,
+    descrizione:
+      "Cerchietto singolo con zircone rettangolare pendente. Scegli il tuo colore preferito. Venduto singolarmente. Disponibile in finitura argento e oro.",
+    immagine: "/immagini/set-cerchietti-colorati-argento.jpg",
+    materiale: "Acciaio inox 316L, zircone",
+    misure: "Diametro cerchio 12 mm, lunghezza totale 2,1 cm",
+    varianti: [
+      { nome: "Rosa", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
+      { nome: "Cipria", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
+      { nome: "Bianco", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
+      { nome: "Blu", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
+      { nome: "Verde", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
+      { nome: "Lilla", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
     ],
+  },
   },
   {
     slug: "orecchini-cerchio-zirconi",
