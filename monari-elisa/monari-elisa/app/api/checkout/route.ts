@@ -19,10 +19,22 @@ export async function POST(request: Request) {
       return NextResponse.json({ errore: "Carrello vuoto." }, { status: 400 });
     }
 
-    // Non ci fidiamo mai del prezzo inviato dal browser: lo ricalcoliamo
-    // sempre dal catalogo reale (lib/products.ts) lato server.
     const lineItems: Stripe.Checkout.SessionCreateParams.LineItem[] = [];
     for (const articolo of articoli) {
+      // Pacchetto regalo: riga speciale da 1 €, non presente nel catalogo
+      if (articolo.slug === "pacchetto-regalo") {
+        const quantitaRegalo = Math.max(1, Math.min(20, Number(articolo.quantita) || 1));
+        lineItems.push({
+          quantity: quantitaRegalo,
+          price_data: {
+            currency: "eur",
+            unit_amount: 100,
+            product_data: { name: "Pacchetto regalo" },
+          },
+        });
+        continue;
+      }
+
       const prodotto = getProdotto(articolo.slug);
       if (!prodotto) continue;
       const quantita = Math.max(1, Math.min(20, Number(articolo.quantita) || 1));
@@ -54,23 +66,3 @@ export async function POST(request: Request) {
       shipping_address_collection: { allowed_countries: ["IT", "SM", "VA"] },
       shipping_options: [
         {
-          shipping_rate_data: {
-            type: "fixed_amount",
-            fixed_amount: { amount: 690, currency: "eur" },
-            display_name: "Spedizione standard (2-4 giorni)",
-          },
-        },
-      ],
-      success_url: `${origin}/checkout/successo?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${origin}/checkout/annullato`,
-    });
-
-    return NextResponse.json({ url: session.url });
-  } catch (err) {
-    console.error("Errore creazione sessione Stripe:", err);
-    return NextResponse.json(
-      { errore: "Errore durante la creazione del pagamento." },
-      { status: 500 }
-    );
-  }
-}
