@@ -17,7 +17,7 @@ export default function TerminiUsoPage() {
           <p>
             Elisa Monari — P.IVA 02944010996 — Via Raffaele Ricca 22, 16139
             Genova (GE), Italia — PEC: iamelisamonari@pec.it — Email:
-            [EMAIL CLIENTI]
+            elisamonari@icloud.com
           </p>
         </div>
 
