@@ -265,20 +265,9 @@ export const prodotti: Product[] = [
     slug: "cerchietto-zirconi-singolo",
     nome: "Cerchietto con Zirconi",
     categoria: "orecchini",
-    prezzo: 3,
-    descrizione:
-      "Piccolo cerchietto in argento con fila di zirconi. Venduto singolarmente.",
-    immagine: "/immagini/cerchietti-zirconi-set.jpg",
-    materiale: "Acciaio inox 316L, strass",
-    misure: "Diametro 9 mm",
-  },
-  {
-    slug: "cerchietti-zirconi-set-6",
-    nome: "Set 6 Cerchietti con Zirconi",
-    categoria: "orecchini",
     prezzo: 2,
     descrizione:
-      "Set da 6 cerchietti in argento con fila di zirconi, per riempire più piercing o per condividere con le amiche.",
+      "Piccolo cerchietto in argento con fila di zirconi. Venduto singolarmente.",
     immagine: "/immagini/cerchietti-zirconi-set.jpg",
     materiale: "Acciaio inox 316L, strass",
     misure: "Diametro 9 mm",
