@@ -17,7 +17,7 @@ export default function PrivacyPage() {
           <p>
             Elisa Monari — P.IVA 02944010996 — Via Raffaele Ricca 22, 16139
             Genova (GE), Italia — PEC: iamelisamonari@pec.it — Email:
-            [EMAIL CLIENTI]
+            elisamonari@icloud.com
           </p>
         </div>
 
@@ -56,9 +56,9 @@ export default function PrivacyPage() {
           <p>
             I dati non vengono venduti a terzi. Possono essere comunicati solo a
             soggetti che collaborano al servizio, nominati responsabili del
-            trattamento: Stripe (pagamenti), Vercel (hosting), il corriere per
-            le spedizioni e il consulente fiscale. Eventuali trasferimenti fuori
-            dall&apos;Unione Europea avvengono sulla base delle Clausole
+            trattamento: Stripe (pagamenti), Vercel (hosting), Poste Italiane
+            per le spedizioni e il consulente fiscale. Eventuali trasferimenti
+            fuori dall&apos;Unione Europea avvengono sulla base delle Clausole
             Contrattuali Standard approvate dalla Commissione Europea.
           </p>
         </div>
@@ -81,9 +81,9 @@ export default function PrivacyPage() {
           <p>
             Puoi chiedere in ogni momento accesso, rettifica, cancellazione,
             limitazione, portabilità dei dati e opporti al trattamento
-            scrivendo a [EMAIL CLIENTI] oppure a iamelisamonari@pec.it. Puoi
-            inoltre presentare reclamo al Garante per la protezione dei dati
-            personali (www.garanteprivacy.it).
+            scrivendo a elisamonari@icloud.com oppure a iamelisamonari@pec.it.
+            Puoi inoltre presentare reclamo al Garante per la protezione dei
+            dati personali (www.garanteprivacy.it).
           </p>
         </div>
       </div>
