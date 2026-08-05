@@ -7,7 +7,7 @@ export type Product = {
   slug: string;
   nome: string;
   categoria: "anelli" | "orecchini" | "bracciali" | "collane" | "set" | "borse";
-  prezzo: number; // in euro
+  prezzo: number;
   descrizione: string;
   immagine: string;
   materiale?: string;
@@ -17,7 +17,7 @@ export type Product = {
 };
 
 export const prodotti: Product[] = [
-{
+  {
     slug: "orecchini-triplo-cuore",
     nome: "Orecchini Triplo Cuore con Zirconi",
     categoria: "orecchini",
@@ -34,25 +34,6 @@ export const prodotti: Product[] = [
       { nome: "Oro verde", immagine: "/immagini/triplo-cuore-oro-verde.jpg" },
       { nome: "Oro rosa", immagine: "/immagini/triplo-cuore-oro-rosa.jpg" },
       { nome: "Oro rosso", immagine: "/immagini/triplo-cuore-oro-rosso.jpg" },
-    ],
-  },
-  {
-    slug: "cerchietto-singolo-zircone-colorato",
-    nome: "Cerchietto Singolo con Zircone Rettangolare",
-    categoria: "orecchini",
-    prezzo: 2.5,
-    descrizione:
-      "Cerchietto singolo con zircone rettangolare pendente. Scegli il tuo colore preferito. Venduto singolarmente. Disponibile in finitura argento e oro.",
-    immagine: "/immagini/set-cerchietti-colorati-argento.jpg",
-    materiale: "Acciaio inox 316L, zircone",
-    misure: "Diametro cerchio 12 mm, lunghezza totale 2,1 cm",
-    varianti: [
-      { nome: "Rosa", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
-      { nome: "Cipria", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
-      { nome: "Bianco", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
-      { nome: "Blu", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
-      { nome: "Verde", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
-      { nome: "Lilla", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
     ],
   },
   {
@@ -298,17 +279,6 @@ export const prodotti: Product[] = [
     ],
   },
   {
-    slug: "cerchietto-zirconi-singolo",
-    nome: "Cerchietto con Zirconi",
-    categoria: "orecchini",
-    prezzo: 2,
-    descrizione:
-      "Piccolo cerchietto in argento con fila di zirconi. Venduto singolarmente.",
-    immagine: "/immagini/cerchietti-zirconi-set.jpg",
-    materiale: "Acciaio inox 316L, strass",
-    misure: "Diametro 9 mm",
-  },
-  {
     slug: "orecchini-goccia-pave",
     nome: "Orecchini a Cerchio Goccia Pavé",
     categoria: "orecchini",
@@ -354,248 +324,6 @@ export const prodotti: Product[] = [
     varianti: [
       { nome: "Argento", immagine: "/immagini/orecchini-farfalla-asimmetrici-argento.jpg" },
       { nome: "Oro", immagine: "/immagini/orecchini-farfalla-asimmetrici-oro.jpg" },
-    ],
-  },
-  {
-    slug: "anello-pave",
-    nome: "Anello Pavé",
-    categoria: "anelli",
-    prezzo: 12,
-    descrizione:
-      "Anello con superficie bombata interamente ricoperta di zirconi pavé, misura regolabile. Disponibile in argento e oro.",
-    immagine: "/immagini/anello-pave-argento.jpg",
-    materiale: "Acciaio inox 316L, zircone",
-    misure: "Misura regolabile, altezza superficie 1,8 cm",
-    varianti: [
-      { nome: "Argento", immagine: "/immagini/anello-pave-argento.jpg" },
-      { nome: "Oro", immagine: "/immagini/anello-pave-oro.jpg" },
-    ],
-  },
-  {
-    slug: "anello-avvolgente",
-    nome: "Anello Avvolgente Pavé",
-    categoria: "anelli",
-    prezzo: 12,
-    descrizione:
-      "Anello dal design avvolgente, con due punte ricoperte di zirconi pavé che si sfiorano. Misura regolabile. Disponibile in argento e oro.",
-    immagine: "/immagini/anello-avvolgente-argento.jpg",
-    materiale: "Acciaio inox 316L, zircone",
-    misure: "Misura regolabile, altezza superficie 1,5 cm",
-    varianti: [
-      { nome: "Argento", immagine: "/immagini/anello-avvolgente-argento.jpg" },
-      { nome: "Oro", immagine: "/immagini/anello-avvolgente-oro.jpg" },
-    ],
-  },
-  {
-    slug: "anello-scultoreo",
-    nome: "Anello Scultoreo Liscio",
-    categoria: "anelli",
-    prezzo: 12,
-    descrizione:
-      "Anello dalla forma scultorea e organica, superficie liscia e lucida. Misura regolabile. Disponibile in oro e argento.",
-    immagine: "/immagini/anello-scultoreo-oro.jpg",
-    materiale: "Acciaio inox 316L",
-    misure: "Misura regolabile, altezza fascia 1,5 cm",
-    varianti: [
-      { nome: "Oro", immagine: "/immagini/anello-scultoreo-oro.jpg" },
-      { nome: "Argento", immagine: "/immagini/anello-scultoreo-argento.jpg" },
-    ],
-  },
-  {
-    slug: "anello-grappolo-pietre",
-    nome: "Anello a Grappolo di Pietre",
-    categoria: "anelli",
-    prezzo: 13,
-    descrizione:
-      "Anello dorato con un grappolo di tre pietre di cristallo dalle sfumature diverse, misura regolabile. Disponibile in azzurro/blu e fucsia/rosa.",
-    immagine: "/immagini/anello-grappolo-azzurro.jpg",
-    materiale: "Acciaio inox 316L, cristallo",
-    misure: "Misura regolabile, larghezza fascia circa 4,5-9,6 mm, altezza totale pietre circa 17 mm",
-    varianti: [
-      { nome: "Azzurro/Blu", immagine: "/immagini/anello-grappolo-azzurro.jpg" },
-      { nome: "Fucsia/Rosa", immagine: "/immagini/anello-grappolo-fucsia.jpg" },
-    ],
-  },
-  {
-    slug: "anello-intrecciato",
-    nome: "Anello Intrecciato Pavé",
-    categoria: "anelli",
-    prezzo: 12,
-    descrizione:
-      "Anello statement con cerchi intrecciati interamente ricoperti di zirconi pavé. Disponibile in argento e oro.",
-    immagine: "/immagini/anello-intrecciato-argento.jpg",
-    materiale: "Acciaio inox 316L, zircone",
-    misure: "Altezza 2,1 cm, diametro interno circa 17 mm",
-    varianti: [
-      { nome: "Argento", immagine: "/immagini/anello-intrecciato-argento.jpg" },
-      { nome: "Oro", immagine: "/immagini/anello-intrecciato-oro.jpg" },
-    ],
-  },
-  {
-    slug: "anello-cuore-pave",
-    nome: "Anello a Cuore Pavé",
-    categoria: "anelli",
-    prezzo: 12,
-    descrizione:
-      "Anello con superficie a cuore interamente ricoperta di zirconi pavé, misura regolabile. Disponibile in argento e oro.",
-    immagine: "/immagini/anello-cuore-pave-argento.jpg",
-    materiale: "Acciaio inox 316L, zircone",
-    misure: "Misura regolabile, altezza 1,5 cm",
-    varianti: [
-      { nome: "Argento", immagine: "/immagini/anello-cuore-pave-argento.jpg" },
-      { nome: "Oro", immagine: "/immagini/anello-cuore-pave-oro.jpg" },
-    ],
-  },
-  {
-    slug: "anello-solitario-rettangolare",
-    nome: "Anello Solitario Rettangolare",
-    categoria: "anelli",
-    prezzo: 12,
-    descrizione:
-      "Anello con zircone centrale taglio rettangolare e doppia fascia laterale di zirconi, misura regolabile. Disponibile in argento e oro.",
-    immagine: "/immagini/anello-solitario-argento.jpg",
-    materiale: "Acciaio inox 316L, zircone",
-    misure: "Misura regolabile, zircone centrale 4×6 mm",
-    varianti: [
-      { nome: "Argento", immagine: "/immagini/anello-solitario-argento.jpg" },
-      { nome: "Oro", immagine: "/immagini/anello-solitario-oro.jpg" },
-    ],
-  },
-  {
-    slug: "anello-treccia",
-    nome: "Anello a Treccia",
-    categoria: "anelli",
-    prezzo: 10,
-    descrizione:
-      "Anello con superficie scolpita a treccia, misura regolabile. Disponibile in oro e argento.",
-    immagine: "/immagini/anello-treccia-oro.jpg",
-    materiale: "Acciaio inox 316L",
-    misure: "Misura regolabile, larghezza superficie 5,8 mm, larghezza fascia 1,8-3,7 mm",
-    varianti: [
-      { nome: "Oro", immagine: "/immagini/anello-treccia-oro.jpg" },
-      { nome: "Argento", immagine: "/immagini/anello-treccia-argento.jpg" },
-    ],
-  },
-  {
-    slug: "anello-cuore-contorno",
-    nome: "Anello a Fascia Sottile con Cuore",
-    categoria: "anelli",
-    prezzo: 10,
-    descrizione:
-      "Anello a fascia sottile in argento, con un piccolo cuore in strass e uno zircone accanto. Delicato e minimal.",
-    immagine: "/immagini/anello-cuore-contorno.jpg",
-    materiale: "Acciaio inox 316L, strass",
-    misure: "Spessore fascia 1 mm, cuore 1,2×1,1 cm",
-  },
-  {
-    slug: "anello-doppio-cerchio-contorno",
-    nome: "Anello a Fascia Sottile con Doppio Cerchio",
-    categoria: "anelli",
-    prezzo: 10,
-    descrizione:
-      "Anello a fascia sottile in argento, con due cerchi intrecciati in strass e uno zircone centrale. Delicato e minimal.",
-    immagine: "/immagini/anello-doppio-cerchio-contorno.jpg",
-    materiale: "Acciaio inox 316L, strass",
-    misure: "Spessore fascia 1 mm, superficie 1,2×1,1 cm",
-  },
-  {
-    slug: "anello-croce-x",
-    nome: "Anello a Croce X",
-    categoria: "anelli",
-    prezzo: 12,
-    descrizione:
-      "Anello dorato con design a X, una fascia interamente ricoperta di zirconi che si incrocia con una fascia liscia. Misura regolabile.",
-    immagine: "/immagini/anello-croce-x-oro.jpg",
-    materiale: "Acciaio inox 316L, zircone",
-    misure: "Misura regolabile, altezza 1,4 cm",
-  },
-  {
-    slug: "anello-fedina-incastonature",
-    nome: "Fedina con Incastonature",
-    categoria: "anelli",
-    prezzo: 12,
-    descrizione:
-      "Fedina sottile con zirconi incastonati alternati a un taglio baguette. Disponibile in argento e oro, nelle misure 16/17/18.",
-    immagine: "/immagini/anello-fedina-incastonature-argento.png",
-    materiale: "Acciaio inox, strass",
-    misure: "Larghezza 3,5 mm, spessore 2 mm, misure disponibili 16/17/18",
-    varianti: [
-      { nome: "Argento", immagine: "/immagini/anello-fedina-incastonature-argento.png" },
-      { nome: "Oro", immagine: "/immagini/anello-fedina-incastonature-oro.png" },
-    ],
-  },
-  {
-    slug: "anello-eternity",
-    nome: "Fedina Eternity",
-    categoria: "anelli",
-    prezzo: 10,
-    descrizione:
-      "Fedina dorata con zirconi tondi incastonati tutto intorno, effetto eternity. Disponibile nelle misure 16/17/18.",
-    immagine: "/immagini/anello-eternity-oro.png",
-    materiale: "Acciaio inox, strass",
-    misure: "Larghezza 2,6 mm, spessore 1,5 mm, misure disponibili 16/17/18",
-  },
-  {
-    slug: "anello-cuore-oro",
-    nome: "Anello con Cuore",
-    categoria: "anelli",
-    prezzo: 8,
-    descrizione:
-      "Anello sottile con piccolo cuore e zircone accanto. Oro. Disponibile nelle misure 16/17/18.",
-    immagine: "/immagini/anello-cuore-oro.jpg",
-    materiale: "Acciaio inox, strass",
-    misure: "Misure disponibili 16/17/18",
-  },
-  {
-    slug: "anello-cuore-argento",
-    nome: "Anello con Cuore",
-    categoria: "anelli",
-    prezzo: 8,
-    descrizione:
-      "Anello sottile con piccolo cuore e zircone accanto. Argento. Disponibile nelle misure 16/17/18.",
-    immagine: "/immagini/anello-cuore-argento.jpg",
-    materiale: "Acciaio inox, strass",
-    misure: "Misure disponibili 16/17/18",
-  },
-  {
-    slug: "set-anelli-cuore-oro-argento",
-    nome: "Set 2 Anelli con Cuore (Oro + Argento)",
-    categoria: "anelli",
-    prezzo: 12,
-    descrizione:
-      "I due anelli con cuore, oro e argento, venduti insieme in un unico set a prezzo scontato rispetto all'acquisto separato.",
-    immagine: "/immagini/anello-cuore-oro.jpg",
-    materiale: "Acciaio inox, strass",
-    misure: "Misure disponibili 16/17/18",
-  },
-  {
-    slug: "anello-cuore-aperto",
-    nome: "Anello Aperto con Cuore",
-    categoria: "anelli",
-    prezzo: 8,
-    descrizione:
-      "Anello a fascia sottile e aperta, con piccolo cuore centrale. Disponibile in argento e oro.",
-    immagine: "/immagini/bracciale-cuore-argento.jpg",
-    materiale: "Acciaio inox 316L",
-    misure: "Spessore 1 mm, cuore 0,8×1,2 cm",
-    varianti: [
-      { nome: "Argento", immagine: "/immagini/bracciale-cuore-argento.jpg" },
-      { nome: "Oro", immagine: "/immagini/bracciale-cuore-oro.jpg" },
-    ],
-  },
-  {
-    slug: "anello-fede-zircone",
-    nome: "Fede con Zircone Singolo",
-    categoria: "anelli",
-    prezzo: 12,
-    descrizione:
-      "Fede sottile e liscia, oro, con un unico zircone incastonato. Disponibile nelle misure 16/17/18.",
-    immagine: "/immagini/anello-fede-zircone-oro.png",
-    materiale: "Acciaio inox, strass",
-    misure: "Larghezza 3,6 mm, spessore 1,8 mm, misure disponibili 16/17/18",
-    varianti: [
-      { nome: "Oro", immagine: "/immagini/anello-fede-zircone-oro.png" },
-      { nome: "Argento", immagine: "/immagini/anello-fede-zircone-argento.png" },
     ],
   },
 ];
