@@ -19,6 +19,7 @@ export default function Home() {
             >
               Scopri la collezione
             </Link>
+            <p className="mt-6 text-sm text-inchiostro/70 max-w-sm">Acciaio inossidabile: non arrugginisce, non annerisce, perfetto tutti i giorni. Nichel nei limiti di legge (EN 1811).</p>
           </div>
 
           <div className="flex justify-center sm:justify-end">
