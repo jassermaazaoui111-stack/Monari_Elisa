@@ -65,8 +65,8 @@ export default function CookiePage() {
             Contatti
           </h2>
           <p>
-            Per domande sui cookie scrivi a [EMAIL CLIENTI]. Per il trattamento
-            dei dati consulta la privacy policy.
+            Per domande sui cookie scrivi a elisamonari@icloud.com. Per il
+            trattamento dei dati consulta la privacy policy.
           </p>
         </div>
       </div>
