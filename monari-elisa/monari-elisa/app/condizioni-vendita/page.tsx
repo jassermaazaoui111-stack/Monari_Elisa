@@ -17,7 +17,7 @@ export default function CondizioniVenditaPage() {
           <p>
             Elisa Monari — P.IVA 02944010996 — Via Raffaele Ricca 22, 16139
             Genova (GE), Italia — PEC: iamelisamonari@pec.it — Email:
-            [EMAIL CLIENTI]
+            elisamonari@icloud.com
           </p>
         </div>
 
@@ -60,10 +60,11 @@ export default function CondizioniVenditaPage() {
             Spedizioni
           </h2>
           <p>
-            Spediamo in Italia, San Marino e Città del Vaticano. Il costo di
-            spedizione è di 6,90 €. Gli ordini vengono preparati entro [N]
-            giorni lavorativi e consegnati tramite [CORRIERE] entro [N] giorni
-            lavorativi dalla spedizione.
+            Spediamo in Italia, San Marino e Città del Vaticano tramite Poste
+            Italiane. Il costo di spedizione è di 6,90 €. Gli ordini vengono
+            preparati entro 1-2 giorni lavorativi e consegnati entro un massimo
+            di 3 giorni dalla spedizione. I tempi possono variare nei periodi di
+            maggiore traffico.
           </p>
         </div>
 
@@ -75,9 +76,9 @@ export default function CondizioniVenditaPage() {
             Ai sensi degli artt. 52 e seguenti del Codice del Consumo (D.Lgs.
             206/2005), se acquisti come consumatore hai diritto di recedere
             entro 14 giorni dalla ricezione del prodotto, senza indicarne il
-            motivo. È sufficiente inviare una comunicazione a [EMAIL CLIENTI]
-            indicando il numero d&apos;ordine, e restituire il prodotto entro 14
-            giorni dalla comunicazione.
+            motivo. È sufficiente inviare una comunicazione a
+            elisamonari@icloud.com indicando il numero d&apos;ordine, e
+            restituire il prodotto entro 14 giorni dalla comunicazione.
           </p>
           <p className="mb-2">
             Il prodotto deve essere restituito integro, non utilizzato, completo
@@ -111,7 +112,7 @@ export default function CondizioniVenditaPage() {
             24 mesi prevista dal Codice del Consumo. In caso di difetto hai
             diritto alla riparazione, alla sostituzione o, se non possibili,
             alla riduzione del prezzo o alla risoluzione del contratto. Segnala
-            il difetto a [EMAIL CLIENTI] allegando una fotografia.
+            il difetto a elisamonari@icloud.com allegando una fotografia.
           </p>
         </div>
 
@@ -120,7 +121,7 @@ export default function CondizioniVenditaPage() {
             Reclami e controversie
           </h2>
           <p>
-            Per qualsiasi reclamo scrivi a [EMAIL CLIENTI]. In caso di
+            Per qualsiasi reclamo scrivi a elisamonari@icloud.com. In caso di
             controversia puoi ricorrere alla piattaforma europea di risoluzione
             online delle controversie (ODR) della Commissione Europea.
           </p>
