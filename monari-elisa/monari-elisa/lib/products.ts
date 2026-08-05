@@ -55,7 +55,6 @@ export const prodotti: Product[] = [
       { nome: "Lilla", immagine: "/immagini/set-cerchietti-colorati-argento.jpg" },
     ],
   },
-  },
   {
     slug: "orecchini-cerchio-zirconi",
     nome: "Orecchini a Cerchio con Zirconi",
