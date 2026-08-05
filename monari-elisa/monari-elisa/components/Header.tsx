@@ -2,18 +2,6 @@
 
 import Link from "next/link";
 import { useCart } from "@/lib/cart-context";
-import { Product } from "@/lib/products";
-
-const NOMI: Record<Product["categoria"], string> = {
-  anelli: "Anelli",
-  orecchini: "Orecchini",
-  bracciali: "Bracciali",
-  collane: "Collane",
-  set: "Set",
-  borse: "Borse",
-};
-
-const ORDINE: Product["categoria"][] = ["orecchini"];
 
 export default function Header() {
   const { numeroArticoli } = useCart();
@@ -29,15 +17,12 @@ export default function Header() {
           <Link href="/" className="hover:text-bosco transition-colors">
             Home
           </Link>
-          {ORDINE.map((cat) => (
-            <Link
-              key={cat}
-              href={`/prodotti/${cat}`}
-              className="hover:text-bosco transition-colors"
-            >
-              {NOMI[cat]}
-            </Link>
-          ))}
+          <Link href="/prodotti/orecchini" className="hover:text-bosco transition-colors">
+            Orecchini
+          </Link>
+          <Link href="/info" className="hover:text-bosco transition-colors">
+            Info
+          </Link>
         </nav>
 
         <Link
