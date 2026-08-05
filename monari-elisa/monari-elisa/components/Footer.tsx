@@ -1,42 +1,31 @@
 import Link from "next/link";
-import { Product } from "@/lib/products";
-
-const NOMI: Record<Product["categoria"], string> = {
-  anelli: "Anelli",
-  orecchini: "Orecchini",
-  bracciali: "Bracciali",
-  collane: "Collane",
-  set: "Set",
-  borse: "Borse",
-};
-
-const ORDINE: Product["categoria"][] = [
-  "anelli",
-  "orecchini",
-  "bracciali",
-  "collane",
-  "set",
-  "borse",
-];
 
 export default function Footer() {
-  const categorieConProdotti = ORDINE.filter((cat) => cat !== "borse");
-
   return (
     <footer className="mt-24 border-t border-bronzoChiaro/70 bg-avorioScuro">
-      <div className="mx-auto max-w-6xl px-6 py-12 grid gap-10 sm:grid-cols-2">
+      <div className="mx-auto max-w-6xl px-6 py-12 grid gap-10 sm:grid-cols-3">
         <div className="text-sm text-inchiostro/70">
           <p className="font-sans uppercase tracking-tag text-xs text-inchiostro mb-3">
             Negozio
           </p>
           <ul className="space-y-2">
-            {categorieConProdotti.map((cat) => (
-              <li key={cat}>
-                <Link href={`/prodotti/${cat}`} className="hover:text-bosco">
-                  {NOMI[cat]}
-                </Link>
-              </li>
-            ))}
+            <li>
+              <Link href="/prodotti/orecchini" className="hover:text-bosco">
+                Orecchini
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="text-sm text-inchiostro/70">
+          <p className="font-sans uppercase tracking-tag text-xs text-inchiostro mb-3">
+            Servizio clienti
+          </p>
+          <ul className="space-y-2">
+            <li><Link href="/condizioni-vendita" className="hover:text-bosco">Resi</Link></li>
+            <li><Link href="/condizioni-vendita" className="hover:text-bosco">Spedizioni</Link></li>
+            <li><Link href="/condizioni-vendita" className="hover:text-bosco">Garanzia</Link></li>
+            <li><Link href="/informazioni-legali" className="hover:text-bosco">Contatti</Link></li>
           </ul>
         </div>
 
