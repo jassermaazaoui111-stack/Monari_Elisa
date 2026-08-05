@@ -34,7 +34,9 @@ export const prodotti: Product[] = [
       { nome: "Oro verde", immagine: "/immagini/triplo-cuore-oro-verde.jpg" },
       { nome: "Oro rosa", immagine: "/immagini/triplo-cuore-oro-rosa.jpg" },
       { nome: "Oro rosso", immagine: "/immagini/triplo-cuore-oro-rosso.jpg" },
-    ],{
+    ],
+  },
+  {
     slug: "cerchietto-singolo-zircone-colorato",
     nome: "Cerchietto Singolo con Zircone Rettangolare",
     categoria: "orecchini",
