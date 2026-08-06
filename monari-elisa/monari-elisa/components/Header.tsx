@@ -24,6 +24,14 @@ export default function Header() {
           <Link href="/info" className="hover:text-bosco transition-colors">
             Info
           </Link>
+          
+            href="https://wa.me/393518519078?text=Ciao!%20Vorrei%20informazioni%20sui%20vostri%20orecchini"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-bosco transition-colors"
+          >
+            WhatsApp
+          </a>
         </nav>
 
         <Link
