@@ -9,13 +9,13 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-bronzoChiaro/70 bg-avorio/95 backdrop-blur">
-      <div className="mx-auto flex flex-col items-center gap-3 px-4 py-4 sm:flex-row sm:justify-between sm:px-6 sm:py-5">
-        <Link href="/" className="flex items-baseline gap-2">
-          <span className="font-display text-5xl text-bronzo leading-none sm:text-7xl">ME</span>
-          <span className="font-display italic text-lg text-inchiostro/70 sm:text-2xl">Jolie boucle</span>
+      <div className="mx-auto flex flex-col items-center gap-3 px-4 py-4 md:flex-row md:justify-between md:gap-6 md:px-6 md:py-5 max-w-6xl">
+        <Link href="/" className="flex items-baseline gap-2 shrink-0">
+          <span className="font-display text-5xl text-bronzo leading-none md:text-6xl">ME</span>
+          <span className="font-display italic text-lg text-inchiostro/70 md:text-2xl">Jolie boucle</span>
         </Link>
 
-        <nav className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 font-sans text-xs uppercase tracking-tag text-inchiostro/80 sm:text-sm sm:gap-6">
+        <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 font-sans text-xs uppercase tracking-tag text-inchiostro/80 md:text-sm md:gap-6">
           <Link href="/" className="hover:text-bosco transition-colors">
             Home
           </Link>
