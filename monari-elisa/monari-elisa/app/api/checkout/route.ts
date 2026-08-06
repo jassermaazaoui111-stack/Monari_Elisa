@@ -73,6 +73,13 @@ export async function POST(request: Request) {
             display_name: "Spedizione Poste (max 3 giorni)",
           },
         },
+        {
+          shipping_rate_data: {
+            type: "fixed_amount",
+            fixed_amount: { amount: 0, currency: "eur" },
+            display_name: "Ritiro a mano — Genova Marassi/Centro (da concordare)",
+          },
+        },
       ],
       success_url: `${origin}/checkout/successo?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/checkout/annullato`,
