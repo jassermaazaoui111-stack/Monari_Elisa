@@ -26,9 +26,9 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Monari Elisa — Anelli e orecchini",
+  title: "ME · Jolie boucle — Orecchini",
   description:
-    "Una selezione curata di anelli e orecchini a prezzi onesti.",
+    "Orecchini scelti con cura, a prezzi onesti. Piccoli gioielli da indossare tutti i giorni.",
 };
 
 export default function RootLayout({
