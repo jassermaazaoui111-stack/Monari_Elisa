@@ -11,7 +11,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <Link href="/" className="flex items-baseline gap-3">
           <span className="font-display text-7xl text-bronzo leading-none">ME</span>
-          <span className="font-display italic text-2xl text-inchiostro/70">Jolie Boucle</span>
+          <span className="font-display italic text-2xl text-inchiostro/70">Jolie boucle</span>
         </Link>
 
         <nav className="hidden gap-6 font-sans text-sm uppercase tracking-tag text-inchiostro/80 lg:flex">
