@@ -39,7 +39,7 @@ export default function CarrelloPage() {
           Il carrello è vuoto
         </h1>
         <Link
-          href="/prodotti/gioielli"
+          href="/prodotti/orecchini"
           className="mt-6 inline-block rounded-full bg-bosco px-7 py-3 text-sm text-avorio hover:bg-boscoScuro transition-colors"
         >
           Sfoglia la collezione
