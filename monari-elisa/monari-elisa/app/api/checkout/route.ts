@@ -44,7 +44,6 @@ export async function POST(request: Request) {
           unit_amount: Math.round(prodotto.prezzo * 100),
           product_data: {
             name: prodotto.nome,
-            images: [prodotto.immagine],
           },
         },
       });
@@ -57,7 +56,10 @@ export async function POST(request: Request) {
       );
     }
 
-    const origin = request.headers.get("origin") || process.env.SITE_URL || "";
+    const origin =
+      request.headers.get("origin") ||
+      process.env.SITE_URL ||
+      "https://mejolieboucle.it";
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
@@ -67,8 +69,8 @@ export async function POST(request: Request) {
         {
           shipping_rate_data: {
             type: "fixed_amount",
-            fixed_amount: { amount: 690, currency: "eur" },
-            display_name: "Spedizione standard (2-4 giorni)",
+            fixed_amount: { amount: 650, currency: "eur" },
+            display_name: "Spedizione Poste (max 3 giorni)",
           },
         },
       ],
