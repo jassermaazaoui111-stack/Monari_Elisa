@@ -1,18 +1,9 @@
 import { notFound } from "next/navigation";
 import ProductCard from "@/components/ProductCard";
-import { getProdottiPerCategoria, Product } from "@/lib/products";
-
-const NOMI: Record<Product["categoria"], string> = {
-  anelli: "Anelli",
-  orecchini: "Orecchini",
-  bracciali: "Bracciali",
-  collane: "Collane",
-  set: "Set",
-  borse: "Borse",
-};
+import { getProdottiPerCategoria, NOMI_CATEGORIE, Categoria } from "@/lib/products";
 
 export function generateStaticParams() {
-  return Object.keys(NOMI).map((categoria) => ({ categoria }));
+  return Object.keys(NOMI_CATEGORIE).map((categoria) => ({ categoria }));
 }
 
 export default function CategoriaPage({
@@ -20,15 +11,13 @@ export default function CategoriaPage({
 }: {
   params: { categoria: string };
 }) {
-  const categoria = params.categoria as Product["categoria"];
-  if (!NOMI[categoria]) notFound();
-
+  const categoria = params.categoria as Categoria;
+  if (!NOMI_CATEGORIE[categoria]) notFound();
   const lista = getProdottiPerCategoria(categoria);
-
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
       <h1 className="font-display text-4xl italic text-inchiostro mb-10">
-        {NOMI[categoria]}
+        {NOMI_CATEGORIE[categoria]}
       </h1>
       {lista.length === 0 ? (
         <p className="text-inchiostro/60">
