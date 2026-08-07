@@ -43,6 +43,7 @@ export const prodotti: Product[] = [
       { nome: "Oro", immagine: "/immagini/ear-cuff-rotondo-oro.jpg" },
     ],
   },
+  {
     slug: "orecchini-triplo-cuore",
     nome: "Orecchini Triplo Cuore con Zirconi",
     categoria: "lobo",
