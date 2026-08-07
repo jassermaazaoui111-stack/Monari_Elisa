@@ -29,6 +29,21 @@ export const ORDINE_CATEGORIE: Categoria[] = ["cerchi", "lobo", "pendenti", "ear
 
 export const prodotti: Product[] = [
   {
+    {
+    slug: "ear-cuff-rotondo-semplice",
+    nome: "Ear Cuff Rotondo Spesso Semplice",
+    categoria: "ear-cuff",
+    prezzo: 5,
+    descrizione:
+      "Ear cuff rotondo a fascia spessa, effetto scanalato. Si indossa senza foro, basta agganciarlo al bordo dell'orecchio. Disponibile in argento e oro.",
+    immagine: "/immagini/ear-cuff-rotondo-argento.jpg",
+    materiale: "Acciaio inox 316L",
+    misure: "Spessore 4,5 mm, diametro esterno 20 mm, diametro interno 10 mm",
+    varianti: [
+      { nome: "Argento", immagine: "/immagini/ear-cuff-rotondo-argento.jpg" },
+      { nome: "Oro", immagine: "/immagini/ear-cuff-rotondo-oro.jpg" },
+    ],
+  },
     slug: "orecchini-triplo-cuore",
     nome: "Orecchini Triplo Cuore con Zirconi",
     categoria: "lobo",
