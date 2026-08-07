@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 import { getProdottiPerCategoria, NOMI_CATEGORIE, Categoria } from "@/lib/products";
 
@@ -16,6 +17,13 @@ export default function CategoriaPage({
   const lista = getProdottiPerCategoria(categoria);
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
+      <Link
+        href="/prodotti/orecchini"
+        className="inline-block mb-4 text-sm text-inchiostro/60 hover:text-bosco transition-colors"
+      >
+        ← Tutti gli orecchini
+      </Link>
+
       <h1 className="font-display text-4xl italic text-inchiostro mb-10">
         {NOMI_CATEGORIE[categoria]}
       </h1>
