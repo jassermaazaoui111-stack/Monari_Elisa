@@ -29,7 +29,6 @@ export const ORDINE_CATEGORIE: Categoria[] = ["cerchi", "lobo", "pendenti", "ear
 
 export const prodotti: Product[] = [
   {
-    {
     slug: "ear-cuff-rotondo-semplice",
     nome: "Ear Cuff Rotondo Spesso Semplice",
     categoria: "ear-cuff",
