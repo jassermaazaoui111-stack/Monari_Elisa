@@ -14,7 +14,7 @@ export default function DettaglioProdotto({ prodotto }: { prodotto: Product }) {
   const variante = prodotto.varianti?.[varianteIndex];
   const immagineAttuale = variante?.immagine ?? prodotto.immagine;
 
-  const regaloDisponibile = prodotto.categoria === "orecchini";
+ const regaloDisponibile = true;
 
   function handleClick() {
     const prodottoDaAggiungere = variante
